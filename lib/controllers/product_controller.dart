@@ -14,14 +14,7 @@ class ProductController extends GetxController {
 
   void fetchProduct() async {
     var product = await RemoteServer.fetchData();
-    // var product = [
-    //   Product(
-    //       productName: 'productName',
-    //       price: 'price',
-    //       productLink: 'productLink',
-    //       image:
-    //           ''),
-    // ];
+    print(product);
     if (product != null) {
       productList.value = product;
     }
